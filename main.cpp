@@ -32,7 +32,7 @@ std::list<string> list_from_string(string str)
 }
 
 int main() {
-    string file_name = "C:\\Users\\minyk\\CLionProjects\\untitled1\\tekstas.txt";
+    string file_name = "tekstas.txt";
     std::ifstream MyReadFile(file_name);
     if (!MyReadFile) {
         cout << "\nNepavyko pasiekti failo, pasitkrinkite ar jis tikrai tokiu pavadinimu.\n";
@@ -83,7 +83,7 @@ int main() {
 
     }
 
-    file_name = "C:\\Users\\minyk\\CLionProjects\\untitled1\\rezultatas.txt";
+    file_name = "rezultatas.txt";
     std::ofstream MyOutputFile;
     MyOutputFile.open(file_name);
     MyOutputFile << '\t' << std::left << std::setw(20) << "Zodis" << std::setw(10) << "Kiekis" << '\t' << "Eilutes kur pasikartojo" << std::endl;
@@ -98,7 +98,7 @@ int main() {
     }
     MyOutputFile.close();
 
-    file_name = "C:\\Users\\minyk\\CLionProjects\\untitled1\\url.txt";
+    file_name = "url.txt";
     std::ofstream URL_file;
     URL_file.open(file_name);
     for (auto x : web_set){
